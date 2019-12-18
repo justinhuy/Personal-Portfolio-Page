@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #F0F0F0;
+}
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #BE3144;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1.3rem;
+    padding: 1.2rem;
+}
+
+.nav-list a:hover,
+.nav-list a:active {
+    background-color: #45567D;
+}
+
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#welcome-section h1 {
+    font-size: 3.6rem;
+}
+
+#welcome-section>p {
+    font-size: 1.8rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #BE3144;
+}
+
+/* /----------------/Project Section/----------------/ */
+
+#projects-section {
+    text-align: center;
+    background-color: #45567d;
+    padding: 5.5rem 1.2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2.3rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 3.3rem;
+}
+
+.projects-section-header {
+    max-width: 680px;
+    margin: 0 auto 3.3rem;
+    border-bottom: solid 0.1rem #F0F0F0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.project-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    padding: 1.2rem 0.3rem;
+    background-color: #303841;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.code {
+    color: #303841;
+    transition: color 0.3s ease-out;
+}
+
+a:hover span {
+    color: #e67e22;
+}
+
+#profile-link a {
+    padding: 9px 19px;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    background-color: #303841;
+    transition: background-color 0.3s ease-out;
+}
+
+#profile-link a:hover {
+    background-color: #BE3144;
+}
+
+/* /----------------/Contact Section/----------------/ */
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background-color: #303841;
+}
+
+.contact-section h2 {
+    font-size: 2.7rem;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+.contact-section-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 2.2rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.3rem 1.1rem;
+    border-radius: 2px;
+}
+
+.contact-icon {
+    font-size: 1.8rem;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.contact-details {
+    font-size: 1.4rem;
+    text-shadow: 2px 1px 1px #1f1f1f;
+    transition: transform 0.2s ease-out;
+}
+
+.contact-details:hover {
+    transform: translate(0px, 5px);
+}
+
+/* /----------------/Footer/----------------/ */
+footer {
+    font-size: 1rem;
+    font-weight: 300;
+    display: flex;
+    padding: 2rem;
+    background-color: #303841;
+    border-top: 3px solid #BE3144;
+    justify-content: center;
+}
